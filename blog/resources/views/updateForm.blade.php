@@ -6,9 +6,9 @@
 
             <div class="col-md-4 offset-md-4">  
                <h3>Add Data</h3>
-              <form action="addData" method="POST" enctype="multipart/form-data" class="mt-3">
-              	
+              <form action="/updateData" method="POST" enctype="multipart/form-data" class="mt-3">
                 @csrf
+                <input type="hidden" value="{{$value['id']}}" name="id">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" value="{{$value['name']}}"><br>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" value="{{$value['email']}}"><br>
                 <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Phone" value="{{$value['Phone']}}"><br>

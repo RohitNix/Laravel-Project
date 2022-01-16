@@ -4,6 +4,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 offset-md-1">
+        @if(session('updateSuccess'))
+                    <div class="alert alert-success" role="alert">
+                          Data Updated Successfully !
+                     </div>
+        @endif 
         <h2 class="mt-5">Aspirants List </h2>
         <table class="table table-striped mt-3">
           <thead>

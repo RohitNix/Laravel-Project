@@ -31,3 +31,5 @@ Route::get('index',[dataQueries::class,'listData']);
 Route::get('delete/{id}',[dataQueries::class,'deleteData']);
 // Route showing the data in form of particular data //
 Route::get('showData/{id}',[dataQueries::class,'showData']);
+// code for updating the Data into the database //
+Route::post('updateData',[dataQueries::class,'updateData']);

@@ -11,7 +11,7 @@
                      </div>
                @endif      
                <h3>Add Data</h3>
-              <form action="addData" method="POST" enctype="multipart/form-data" class="mt-3">
+              <form action="/addData" method="POST" enctype="multipart/form-data" class="mt-3">
                 @csrf
                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name"><br>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"><br>
