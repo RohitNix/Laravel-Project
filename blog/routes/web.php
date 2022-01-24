@@ -33,3 +33,7 @@ Route::get('delete/{id}',[dataQueries::class,'deleteData']);
 Route::get('showData/{id}',[dataQueries::class,'showData']);
 // code for updating the Data into the database //
 Route::post('updateData',[dataQueries::class,'updateData']);
+//code for showing the login form//
+Route::view('login','login');
+// code for the uthentication//
+Route::post('auth',[dataQueries::class,'auth']);
